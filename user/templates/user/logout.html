@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "blog/base.html" %}
 {% block content %}
     <h2 style="color: crimson;">You have been logged out</h2>
@@ -7,4 +8,15 @@
             </small>
         </div>
 
+=======
+{% extends "blog/base.html" %}
+{% block content %}
+    <h2 style="color: crimson;">You have been logged out</h2>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                <a  href="{%url 'login'%}">Login Again</a>
+            </small>
+        </div>
+
+>>>>>>> 6463235276beeb7b320d35990b989260ea8036c4
 {% endblock content %}

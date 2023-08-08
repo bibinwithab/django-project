@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "blog/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
@@ -22,4 +23,30 @@
         </div>
     </div>
 
+=======
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+    <div>
+        <h1 style="color: crimson;">Join Now</h1>
+        <form method="POST">
+            {% csrf_token %} <!--security shit-->
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Register</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submin">Register</button>
+            </div>
+        </form>
+        
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Already Have An Account? <a class="ml-2" href="{%url 'login'%}">Sign In</a>
+            </small>
+        </div>
+    </div>
+
+>>>>>>> 6463235276beeb7b320d35990b989260ea8036c4
 {% endblock content %}
